@@ -10,7 +10,7 @@ export function SignInButton() {
     return session ? (
         <button className={styles.signInButton} onClick={() => signOut()}>
             <FaGithub color="#04D361" />
-            { session.user.name }
+            { session.user?.name }
             <FiX color="#737380" className={styles.closeButton} />
         </button>
     ): (
